@@ -2,133 +2,220 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Bookmark landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+
 </head>
 <body>
 
-  Features
-  Pricing
-  Contact
-  Login
+  <div class="wrapper">
 
-  A Simple Bookmark Manager
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <img src="images/logo-bookmark.svg" alt="" href="#">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Contact</a>
+            <button type="button" class="btn btn-danger" id="nav-button">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
+    <div class="header">
+      <img src="images/illustration-hero.svg" alt="" class="mobile-hero">
 
-  Get it on Chrome
-  Get it on Firefox
+      <h1>A Simple Bookmark Manager</h1>
 
-  Features
+      <p>A clean and simple interface to organize your favourite websites. Open a new
+      browser tab and see your sites load instantly. Try it for free.</p>
 
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
+      <div class="button-wrapper">
+        <button type="button" class="btn btn-primary btn-lg btn-body">Get it on Chrome</button>
+        <button type="button" class="btn btn-light btn-lg btn-body">Get it on Firefox</button>
+      </div>
+    </div>
 
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
+    <div class="features-wrapper">
 
-  Bookmark in one click
+      <h2>Features</h2>
 
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
+      <p>Our aim is to make it quick and easy for you to access your favourite websites.
+      Your bookmarks sync between your devices so you can access them on the go.</p>
 
-  More Info
+      <div class="features-buttons">
+        <button type='button' class='features-button' id='features-button-1'>
+          Simple Bookmarking
+        </button>
+        <button type='button' class='features-button' id='features-button-2'>
+          Speedy Searching
+        </button>
+        <button type='button' class='features-button' id='features-button-3'>
+          Easy Sharing
+        </button>
+      </div>
 
-  Intelligent search
+      <div class="features-tabs">
+        <div class="feature-tab-1" id="feature-tab-1">
+          <img src="images/illustration-features-tab-1.svg" alt="" class="feature-tab-image">
+          <div class="feature-tab-body">
+            <h2>Bookmark in one click</h2>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+            gives you complete control over how you manage your favourite sites.</p>
+            <button type="button" class="btn btn-primary info-button" id="info-button">More Info</button>
+          </div>
+        </div>
+        <div class="feature-tab-2" id="feature-tab-2">
+          <img src="images/illustration-features-tab-2.svg" alt="" class="feature-tab-image">
+          <div class="feature-tab-body">
+            <h2>Intelligent search</h2>
+            <p>Our powerful search feature will help you find saved sites in no time at all.
+            No need to trawl through all of your bookmarks.</p>
+            <button type="button" class="btn btn-primary info-button" id="info-button">More Info</button>
+          </div>
+        </div>
+        <div class="feature-tab-3" id="feature-tab-3">
+          <img src="images/illustration-features-tab-3.svg" alt="" class="feature-tab-image">
+          <div class="feature-tab-body">
+            <h2>Share your bookmarks</h2>
+            <p>Easily share your bookmarks and collections with others. Create a shareable
+            link that you can send at the click of a button.</p>
+            <button type="button" class="btn btn-primary info-button" id="info-button">More Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
+    <div class="download-wrapper">
+      <h2>Download the extension</h2>
 
-  More Info
+      <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
+      got a favourite you’d like us to prioritize.</p>
 
-  Share your bookmarks
+      <div class="browser-card">
+        <img src="images/logo-chrome.svg" alt="" class="browser-logo">
+        <h3>Add to Chrome</h3>
+        <p>Minimum version 62</p>
+        <img src="images/bg-dots.svg" alt="">
+        <button type="button" class="btn btn-primary">Add & Install Extension</button>
+      </div>
 
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
+      <div class="browser-card">
+        <img src="images/logo-firefox.svg" alt="" class="browser-logo">
+        <h3>Add to Chrome</h3>
+        <p>Minimum version 55</p>
+        <img src="images/bg-dots.svg" alt="">
+        <button type="button" class="btn btn-primary">Add & Install Extension</button>
+      </div>
 
-  More Info
+      <div class="browser-card">
+        <img src="images/logo-opera.svg" alt="" class="browser-logo">
+        <h3>Add to Chrome</h3>
+        <p>Minimum version 46</p>
+        <img src="images/bg-dots.svg" alt="">
+        <button type="button" class="btn btn-primary">Add & Install Extension</button>
+      </div>
+    </div>
 
-  Download the extension
+    <div class="faq-wrapper">
+      <h2>Frequently Asked Questions</h2>
 
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
+      <p>Here are some of our FAQs. If you have any other questions you’d like
+      answered please feel free to email us.</p>
 
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              What is Bookmark?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              How can i request a new browser?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Is there a mobile app?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">What about other Chromium browsers?
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
+    <button type="button" class="btn btn-primary info-button" id="info-button">More Info</button>
 
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
+    <div class="contact-wrapper">
 
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
+      <p>35,000+ already joined</p>
+      <h2>Stay up-to-date with what we’re doing</h2>
 
-  <!-- Question 1 -->
-  What is Bookmark?
+      <form action="" id="contact-form" class="contact-form">
+        <input type="text" class="contact-input" id="contact-input" placeholder="You email address here...">
+        <button type="submit" class="btn btn-danger contact-button" id="contact-button">Contact Us</button>
+      </form>
+    </div>
 
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+    <div class="footer">
+      <img src="images/logo-bookmark.svg" id="bookmark-white">
 
-  <!-- Question 2 -->
-  How can I request a new browser?
+      <p>Features</p>
+      <p>Pricing</p>
+      <p>Contact</p>
 
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+      <div class="social-icons">
+        <img src="images/icon-facebook.svg" alt="">
+        <img src="images/icon-twitter.svg" alt="">
+      </div>
+    </div>
+  </div>
 
-  <!-- Question 3 -->
-  Is there a mobile app?
+  <script src="app.js"></script>
 
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-  <!-- Question 4 -->
-  What about other Chromium browsers?
 
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
 
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
 </html>
