@@ -36,6 +36,18 @@ contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   let input = contactInput.value.trim();
   if (input === '') {
-    alert('Please enter a valid email address.');
+    contactInput.classList.add('error');
+  } else if(!isEmail(input)) {
+    contactInput.classList.add('error');
+  } else {
+    alert('Success!');
+    contactInput.classList.remove('error');
+    contactInput.classList.add('success');
   }
+
+  contactInput.innerHTML === '';
 })
+
+function isEmail(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
